@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Minesweeper</title>
+</head>
+
+<body onload="init()">
+
+    <h1>Mine Sweeper</h1>
+
+    <div class="smile-box">
+        <img id="img" class="emoji" src="img/smile.png" onclick="init()">
+    </div>
+    <div class="timer">
+        <label id="minutes">00</label>:<label id="seconds">00</label>
+    </div>
+
+    <ul>
+        <li>
+            <div class="lives">
+                <img src="img/heart.png" style="width: 25px; height: 25px;">
+                <img src="img/heart.png" style="width: 25px; height: 25px;">
+                <img src="img/heart.png" style="width: 25px; height: 25px;">
+            </div>
+        </li>
+        <!-- <li>
+            <div class="hints">
+                <img src="img/hint.png" style="width: 18px; height: 28px;">
+                <img src="img/hint.png" style="width: 18px; height: 28px;">
+                <img src="img/hint.png" style="width: 18px; height: 28px;">
+            </div>
+        </li> -->
+
+    </ul>
+
+    <div class="game-box">
+        <table class="table" oncontextmenu="return false;" style="margin: auto">
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="buttons-container">
+        <button autofocus onclick="changeLevel(this,4,2)" style="color: white; background-color: black;"
+            class="w3-btn w3-black">Easy</button>
+        <button onclick="changeLevel(this,8,4)" style="color: white; background-color: black;">Medium</button>
+        <button onclick="changeLevel(this,12,30)" style="color: white; background-color: black;">Hard</button>
+    </div>
+    <div id="footer"> <span>
+            Ohad Horenstein @2020 | SPRINT #1 | Mine Sweeper</span></div>
+
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

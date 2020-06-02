@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Touch Nums</title>
+</head>
+
+<body style="background-color:lightgrey;" onload="init()">
+
+    <div class="w3-container" style="margin: auto; text-align: center; padding-top: 20px;">
+        <input type="button" onclick="init()" class="w3-btn w3-black" value="New Game">
+    </div>
+    <div class="w3-container" style="margin: auto; text-align: center;">
+        <div class="timer box w3-btn w3-black">Game time</div>
+        <div class="next-num box w3-btn w3-black">Next number</div>
+    </div>
+    <div class="w3-container" style="margin: auto; text-align: center;">
+        <input type="button" onclick="changeLevel(this)" class="w3-btn w3-black" value="Easy">
+        <input type="button" onclick="changeLevel(this)" class="w3-btn w3-black" value="Medium">
+        <input type="button" onclick="changeLevel(this)" class="w3-btn w3-black" value="Hard">
+    </div>
+    <div class="w3-container" style="margin: auto; text-align: center;">
+        <table>
+            <tbody class="table">
+            </tbody>
+        </table>
+    </div>
+
+    <div class="background">
+
+    </div>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

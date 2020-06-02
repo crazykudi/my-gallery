@@ -1,0 +1,86 @@
+* {
+    text-align: center;
+    font-family: monospace;
+    
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    margin: 5px;
+    background-color: black; 
+    font-size: 42px;
+    padding-right: 20px;
+}
+
+div.lives {
+padding-right: 35px;
+}
+
+.smile-box {
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+img#img.emoji {
+    cursor: pointer;
+}
+
+.timer {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+button {
+    margin: 18px;
+    border-radius: 4px;
+    font-weight: bold;
+    outline-color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.emoji {
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+    color: black;
+    border: 2px double #000000;
+    border-radius: 5px;
+    box-shadow: 2px 2px black;
+    cursor: default;
+}
+
+
+.buttons-container {
+    margin-top: 5px;
+}
+
+.buttons-container button:focus {
+    font-weight: bolder;
+    background-color:white;
+
+}
+
+div.game-box {
+    margin-top: 5px;
+    cursor: pointer;
+    margin: auto;
+} 
+
+#footer {
+    /* position: absolute; */
+    bottom: 5px;
+    text-align: center;
+    width: 100%;
+    font-size: smaller;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    font-style: italic;
+    color: white;
+    font-size: 14px;
+
+}
